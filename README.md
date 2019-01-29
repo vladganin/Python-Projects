@@ -1,3 +1,3 @@
 # Python-Projects
 
-This code draws a grid.
+test2.py - this code draws a grid.
