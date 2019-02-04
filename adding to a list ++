@@ -1,0 +1,39 @@
+ef adding():
+    print("We are adding numbers!")
+    dec = False
+    global values
+    values = []
+    while dec == False:
+        num = input("Add a number, or press enter to continue.\n")
+        if num != "":
+            values = values + [num]
+            print(values)
+        else:
+            dec == True
+            break
+    print("Our numbers are: " + str(values))
+
+
+adding()
+
+
+for i in range(len(values)):
+    print("Index " + str(i) + " in values is " + values[i])
+
+for i in range(len(values)):
+    values[i] = int(values[i])
+    
+print(values)
+
+#To check whether a number is in 'values'
+def is_in(number):
+    x = int(number)
+    dec = x in values
+    if dec == True:
+        print(str(number) + " is in the values!")
+    elif dec == False:
+        print(str(number) + " is not in the values")
+
+
+is_in(5)
+is_in(15)
