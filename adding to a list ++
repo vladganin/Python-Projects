@@ -1,4 +1,4 @@
-ef adding():
+def adding():
     print("We are adding numbers!")
     dec = False
     global values
